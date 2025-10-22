@@ -1,0 +1,60 @@
+/*
+Create a simple CSS file for the previous HTML exercise. Requirements:
+Use external style sheet.
+Don’t use default font.
+Add hover effect to the link. Also don’t use default color in the link and remove underline.
+Add border and rounded corners to the image.
+Every second row in the table should have a different background color.
+The list should not have default bullet points.
+*/
+
+
+body {
+    font-family: "Comic Sans MS", cursive;
+    color: black;
+    background: rosybrown;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+#image1 {
+    border: 5px red solid;
+    border-radius: 20%;
+}
+
+#table1 {
+    width: 400px;
+}
+#table1 > caption{
+    background-color: greenyellow;
+    padding: 10px;
+    max-width: 100%;
+}
+
+#table1 > * > tr > th, #table1 > tbody > tr > td  {
+    padding: 10px;
+}
+#table1 > thead  {
+    background-color: lightyellow;
+    width: 100%;
+}
+.evenRow{
+    background-color: lightyellow;
+}
+.oddRow{
+    background-color: greenyellow;
+}
+
+ul {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}

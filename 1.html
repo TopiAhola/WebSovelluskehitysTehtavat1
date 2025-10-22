@@ -15,51 +15,52 @@ The document should be uploaded to Metropolia’s web server and the link to the
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="1.css">
     <title>Task 1 title</title>
 </head>
 
 <body>
-    <h1>Here is s a heading</h1>
+    <h1>Week 1 HTML exercises</h1>
     <article>
-        <h2>Here is heading for an article</h2>
+        <h2>Here is heading</h2>
         <p>Here be paragraph. </p>
     </article>
 
     <div>
-        <a href="https://www.metropolia.fi/fi">Here is a link </a>
+        <a href="https://www.metropolia.fi/fi">This link has cool color and hover effect </a>
         <br>
     </div>
 
     <div>
         <figure>
-            <img src="bunnyScreaming2.jpg" alt="Picture of a rabbit">
-            <figcaption>Here is a figure</figcaption>
+            <img src="bunnyScreaming2.jpg" alt="Picture of a rabbit" id="image1">
+            <figcaption>This image has border and rounded corners.</figcaption>
         </figure>
         <br>
     </div>
 
     <div>
-        <table>
-            <caption>Table: Number of elements on this page</caption>
+        <table id="table1">
+            <caption>Table: Number of some elements on this page</caption>
             <thead>
                 <tr>
                 <th>Element</th>
                 <th>Number</th>
                 </tr>
             </thead>
-            <tr>
+            <tr class="oddRow">
                 <td>tables</td>
                 <td>1</td>
             </tr>
-            <tr>
+            <tr class="evenRow">
                 <td>images</td>
                 <td>2</td>
             </tr>
-            <tr>
+            <tr class="oddRow">
                 <td>headings</td>
                 <td>3</td>
             </tr>
-            <tr>
+            <tr class="evenRow">
                 <td>lists</td>
                 <td>1</td>
             </tr>
@@ -71,12 +72,14 @@ The document should be uploaded to Metropolia’s web server and the link to the
 
     <div>
 
-        Here is a list:
-    <ol>
-        <li>Here is a list item</li>
-        <li>Here is a list item</li>
-        <li>Here is a list item</li>
-    </ol>
+        Shopping list:
+    <ul>
+        <li>Oven paper </li>
+        <li>Peanuts </li>
+        <li>Energy drink </li>
+        <li>Canned meatballs </li>
+
+    </ul>
     </div>
 
     <div>
@@ -90,7 +93,7 @@ The document should be uploaded to Metropolia’s web server and the link to the
     </div>
 
     <div>
-    <h2>Task 1</h2>
+    <h2>Tasks: </h2>
         <p> Create a simple HTML document. Requirements: <br>
             The document should have a title.<br>
             The document should have a heading.<br>
@@ -102,6 +105,17 @@ The document should be uploaded to Metropolia’s web server and the link to the
             The document should be validated using the W3C Markup Validation Service.<br>
             The document should be uploaded to Metropolia’s web server and the link to the document should be shared in the submission.<br>
         </p>
+        <p>
+            Create a simple CSS file for the previous HTML exercise. Requirements:<br>
+            Use external style sheet.<br>
+            Don’t use default font.<br>
+            Add hover effect to the link. Also don’t use default color in the link and remove underline.<br>
+            Add border and rounded corners to the image.<br>
+            Every second row in the table should have a different background color.<br>
+            The list should not have default bullet points.<br>
+
+        </p>
+
     </div>
 
 </body>
