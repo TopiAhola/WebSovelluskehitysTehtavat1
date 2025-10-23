@@ -3,7 +3,7 @@ Topi Ahola
 <br>
 ### Linkit HTML tiedostoihin 
 
-https://users.metropolia.fi/~topiaho/Web-sovelluskehitys/Tehtavat1/1.html
+https://users.metropolia.fi/~topiaho/Web-sovelluskehitys/Tehtavat1
 
 
 
