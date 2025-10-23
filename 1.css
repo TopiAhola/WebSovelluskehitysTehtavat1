@@ -7,14 +7,40 @@ Add border and rounded corners to the image.
 Every second row in the table should have a different background color.
 The list should not have default bullet points.
 */
-
-
-body {
-    font-family: "Comic Sans MS", cursive;
-    color: black;
-    background: rosybrown;
+html {
+    font-family: "Google Sans Code", "Comic Sans MS", monospace;
 }
 
+body {
+    color: black;
+    background: rosybrown;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+
+/* main */
+main {
+    /*display: block; */
+    width: 90%;
+    min-width: 300px;
+    background-color: sandybrown;
+    margin: auto;
+}
+
+/*Every direct child of main */
+main > * {
+    display: block;
+    padding: 10px;
+    margin: auto;
+}
+
+/*links  */
+.link_area {
+    padding: 10px;
+}
 a {
     color: greenyellow;
     text-decoration: none;
@@ -22,25 +48,55 @@ a {
 a:hover {
     color: red;
     text-decoration: none;
-    font-size: large;
+}
+a:visited {
+
+}
+a:active {
+    color: #f1ff2f;
+    font-size: larger;
 }
 
+/*Cards  */
+#card_container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
+.card {
+    padding: 20px;
+    min-width: 300px;
+    width: fit-content;
+}
+
+/*Elements in cards */
+
+/*Images */
+.image_area {
+    padding: 0;
+    margin: 0;
+}
+.image_area img {
+    width: 100%;
+}
 #image1 {
     border: 5px red solid;
     border-radius: 20%;
+    width: 100%;
 }
 
+/*Table */
 #table1 {
-    width: 400px;
+    width: 100%;
 }
 #table1 > caption{
     background-color: greenyellow;
     padding: 10px;
     max-width: 100%;
 }
-
-#table1 > * > tr > th, #table1 > tbody > tr > td  {
+#table1 th, #table1 td  {
     padding: 10px;
 }
 #table1 > thead  {
@@ -54,7 +110,12 @@ a:hover {
     background-color: greenyellow;
 }
 
-ul {
+/*List */
+.shopping_list {
+    background-color: lightyellow;
+    padding: 10px;
+}
+.shopping_list ul {
     list-style-type: upper-roman;
     list-style-position: inside;
 }

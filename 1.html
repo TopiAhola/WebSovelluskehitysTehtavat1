@@ -14,85 +14,100 @@ The document should be uploaded to Metropolia’s web server and the link to the
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Task 1 title</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="1.css">
-    <title>Task 1 title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>Week 1 HTML exercises</h1>
-    <article>
+<header>
+    <h1>Week 1 HTML exercises - Topi Ahola</h1>
+</header>
+<main>
+    <div class="text_with_heading">
         <h2>Here is heading</h2>
-        <p>Here be paragraph. </p>
-    </article>
-
-    <div>
-        <a href="https://www.metropolia.fi/fi">This link has cool color and hover effect </a>
-        <br>
+        <p>
+            Here be paragraph. <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid deserunt eius enim, ex fuga illo ipsa laudantium minus molestias nam neque odio odit pariatur qui quisquam tenetur unde velit.
+        </p>
     </div>
 
-    <div>
-        <figure>
-            <img src="bunnyScreaming2.jpg" alt="Picture of a rabbit" id="image1">
-            <figcaption>This image has border and rounded corners.</figcaption>
-        </figure>
-        <br>
+
+    <div class="link_area">
+        <a href="https://www.metropolia.fi/fi" target="_blank">This link has cool color and hover effect </a>
     </div>
 
-    <div>
-        <table id="table1">
-            <caption>Table: Number of some elements on this page</caption>
-            <thead>
-                <tr>
-                <th>Element</th>
-                <th>Number</th>
+
+    <div id="card_container">
+
+
+        <div class="card">
+            <figure class="image_area">
+                <img src="bunnyScreaming2.jpg" alt="Picture of a rabbit" id="image1">
+                <figcaption>This image has border and rounded corners.</figcaption>
+            </figure>
+        </div>
+
+        <div class="card">
+            <table id="table1">
+                <caption>Table: Number of some elements on this page</caption>
+                <thead>
+                    <tr>
+                    <th>Element</th>
+                    <th>Number</th>
+                    </tr>
+                </thead>
+                <tr class="oddRow">
+                    <td>tables</td>
+                    <td>1</td>
                 </tr>
-            </thead>
-            <tr class="oddRow">
-                <td>tables</td>
-                <td>1</td>
-            </tr>
-            <tr class="evenRow">
-                <td>images</td>
-                <td>2</td>
-            </tr>
-            <tr class="oddRow">
-                <td>headings</td>
-                <td>3</td>
-            </tr>
-            <tr class="evenRow">
-                <td>lists</td>
-                <td>1</td>
-            </tr>
+                <tr class="evenRow">
+                    <td>images</td>
+                    <td>2</td>
+                </tr>
+                <tr class="oddRow">
+                    <td>headings</td>
+                    <td>3</td>
+                </tr>
+                <tr class="evenRow">
+                    <td>lists</td>
+                    <td>1</td>
+                </tr>
 
-        </table>
-        <br>
+            </table>
+        </div>
+
+
+        <div class="card">
+            <div class="shopping_list">
+            Shopping list:
+            <ul>
+                <li>Oven paper </li>
+                <li>Peanuts </li>
+                <li>Energy drink </li>
+                <li>Canned meatballs </li>
+
+            </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <figure class="image_area">
+                <img src="htmlChecker.png"
+                     alt="screenshot of html checker"
+                    width="600">
+                <figcaption>HTML checker result.</figcaption>
+            </figure>
+        </div>
+
     </div>
 
 
-    <div>
-
-        Shopping list:
-    <ul>
-        <li>Oven paper </li>
-        <li>Peanuts </li>
-        <li>Energy drink </li>
-        <li>Canned meatballs </li>
-
-    </ul>
-    </div>
-
-    <div>
-        <figure>
-            <img src="htmlChecker.png"
-                 alt="screenshot of html checker"
-                width="600">
-            >
-            <figcaption>HTML checker result.</figcaption>
-        </figure>
-    </div>
-
-    <div>
+    <div class="assignment">
     <h2>Tasks: </h2>
         <p> Create a simple HTML document. Requirements: <br>
             The document should have a title.<br>
@@ -117,6 +132,10 @@ The document should be uploaded to Metropolia’s web server and the link to the
         </p>
 
     </div>
+</main>
 
+<footer>
+
+</footer>
 </body>
 </html>
